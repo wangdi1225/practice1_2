@@ -1,0 +1,23 @@
+                                          1、2周题目
+1.	错误，float型常量后面必须有f或者F
+2.	引用传递 
+3.	不能被继承，也不能有子类，通常是出于安全性的考虑，使之不能被轻易修改
+4.	Exception 和 Error 都是继承了 Throwable 类，Exception是指程序运行过程中可以预料的意外情况，应该对其进行捕获和处理；Error不便于也不需要处理，一旦发生会导致程序崩溃。
+5.	Final可以修饰类、方法和变量，final类不能被继承，没有子类，final方法不能被重写，当成员变量和局部变量修饰为final之后即是常量，后续程序中无法对其修改。Finally则是在处理异常中使用，无论在try语句中是否发生异常，finally语句都会被执行。
+6.	两个
+7.	因为1是int类型，其类型精度比short高，在完成s1+1过程中会自动转化成int类型，这里需要用显示转换(short)(s1+1)；s1 += 1没有错，因为系统自动会对其进行显示转换。
+8.	数组没有length()方法，但是有length属性用于表示数组的长度；String有length()方法，用于获取字符串的长度
+9.	Overload是指一个类中具有多个名字相同而参数不同的方法，override是指子类中的某个方法与父类中的方法名称和参数相同，通过子类创建实例对象调用该方法时，就会直接调用子类中的方法，从而实现对父类方法的覆盖
+10.	Abstract类既可以有abstract方法也有非abstract方法，而interface中只有abstract方法；一个类可以有多个interface，但只有一个abstract父类；abstract类中的成员变量可以是各种类型的，而interface中的成员变量只能是public static final类型；interface不能有静态方法和静态代码块，abstract则可以有；
+11.	Constructor不能被继承，所以不能被override
+12.	String类声明为Final类，不能被继承。
+13.	FatherClass Create
+ChildClass Creat
+14.	多线程有三种实现方法：继承Thread类，使用Runnable接口，通过 Callable 和 Future 创建线程；五种方法，同步方法，同步代码块，使用特殊域变量（volatile），使用重入锁，使用局部变量
+15.	使用synchronized关键字修饰的同步方法，同步代码块，使用特殊域变量（volatile），使用重入锁，使用局部变量
+16.	其他线程可以进入此对象的其它方法
+17.	C
+18.	String类创建的字符串对象是不能修改的，StringBuffer能创建可修改的字符串序列。
+19.	实现Serializable接口
+20.	Comparable和Compatator接口
+21.	Collection下面主要包括list列表和set集，list是有序的，可重复，set元素是无序的，不可重复
